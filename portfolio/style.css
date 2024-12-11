@@ -1,0 +1,665 @@
+/*
+#f7f7ff off white
+#5egd8c dark grey
+#b8b8d0 light grey
+#261406 off black
+#20323e dark blue
+#e3605e pink
+*/
+
+@font-face {
+    font-family: Sofia;
+    src: url(Sofia-Regular.otf);
+}
+
+@font-face {
+    font-family: Hermeneus;
+    src: url(HermeneusOne-Regular.ttf);
+}
+
+html {
+    background-image: linear-gradient(#20323e, #171c2c);
+    color: #f7f7ff;
+    scroll-behavior: smooth;
+    font-family: Hermeneus;
+}
+
+body {
+    margin: 0;
+}
+
+#wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#header {
+    height: 6vw;
+    position: sticky;
+    top: 0;
+    background-color:#0f0e0d ;
+    z-index: 2;
+}
+
+a {
+    text-decoration: none;
+    color: #f7f7ff;
+}
+
+h1 {
+    font-size: 3vw;
+    font-family: Hermeneus;
+    margin: 0;
+    padding: 1vw;
+    padding-bottom: 0;
+    width: fit-content;
+}
+
+#nav {
+    text-align: center;
+    float: right;
+    position: relative;
+    bottom: 3.5vw;
+}
+
+#nav li {
+    display: inline;
+}
+
+#nav a {
+    padding: 0 3vw;
+    font-size: 1.5vw;
+}
+
+#content div {
+    height: 50vw;
+}
+
+#home div {
+    width: 50%;
+    height: 0;
+}
+
+#container {
+    position: relative;
+}
+
+#left {
+    float: right;
+    position: relative;
+    bottom: 3vw;
+}
+
+#left p {
+    text-align: center;
+    padding-left: 5vw;
+}
+
+#left #moon {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    box-shadow: 4.5vw 2vw 0 0 #d8d8e7;
+    margin-right: 8vw;
+    margin-top: 8vw;
+    font-size: 1.4vw;
+    padding: 1vw;
+}
+
+#headshot {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: auto;
+    border-radius: 50%;
+    transform: translate(0, 45%);
+}
+
+#home,
+#about,
+#projects,
+#resume,
+#contact {
+    margin-top: -9vw;
+    padding-top: 9vw;
+    font-size: 1.4vw;
+}
+
+#content #contact {
+    height: 25vw;
+}
+
+#footer {
+    padding: 1em;
+    text-align: right;
+}
+
+#content #projects {
+    height: auto;
+}
+
+#projects div {
+    height: auto;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+}
+
+#projects #right {
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+
+#projects #right p {
+    text-align: left;
+}
+
+#projects #left p {
+    text-align: right;
+}
+
+#projects #left {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+#logos {
+    width: 7vw;
+    height: 7vw;
+    object-fit: cover;
+}
+
+#resume div {
+    height: auto;
+}
+
+#content #resume {
+    height: auto;
+}
+
+#content #resume #r{
+    height: auto;
+    font-size: 1vw;
+    width: 50vw;
+    margin: auto;
+}
+
+hr.solid {
+    border-top: 3px solid #f7f7ff;
+}
+
+.fa {
+    margin-right: 1vw;
+    padding: 10px;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5%;
+    border-width: 0.2vw;
+    border-style: solid;
+    border-color: #f7f7ff;
+}
+
+span {
+    font-weight: bold;
+}
+
+.date {
+    float: right;
+}
+
+#footer {
+    font-size: 1vw;
+}
+
+/*home cat*/
+
+#left #cat {
+    margin-left: 11.5vw;
+    margin-bottom: 10vw;
+    position: relative;
+    bottom: 2.3vw;
+    left: 2vw;
+    scale: 1.3;
+}
+
+#left #catHead {
+    width: 4vw;
+    height: 2vw;
+    background: black;
+    align-items: center;
+    border-radius: 2vw 2vw 0 0;
+}
+
+#left #catBody {
+    width: 5.4vw;
+    height: 2.5vw;
+    background: black;
+    align-items: center;
+    border-radius: 2.5vw 2.5vw 0 0;
+    position: relative;
+    bottom: 2.5vw;
+    left: 2.6vw;
+}
+
+#left #leftEar {
+    width: 0;
+	height: 0;
+	border-left: 0.4vw solid transparent;
+	border-right: 2vw solid transparent;
+	border-bottom: 1.8vw solid black;
+    position: relative;
+    bottom: 0.7vw;
+    left: 0.2vw;
+}
+
+#left #rightEar {
+    width: 0;
+	height: 0;
+	border-left: 2.1vw solid transparent;
+	border-right: 0.3vw solid transparent;
+	border-bottom: 1.9vw solid black;
+    position: relative;
+    bottom: 2.4vw;
+    left: 1vw;
+}
+
+#left #eyes {
+    position: relative;
+    display: block;
+    bottom: 2.7vw;
+    left: 0.45vw;
+    z-index: 1;
+}
+
+#left .eye {
+    width: 1vw;
+    height: 0.5vw;
+    border-radius: 0 0 1vw 1vw;
+    background: white;
+}
+
+#left #rightEye {
+    float: right;
+    position: relative;
+    left: 0.66vw;
+    bottom: 0.5vw;
+}
+
+#left .pupil {
+    width: 0.25vw;
+    height: 0.5vw;
+    background: #e4c305;
+    border-radius: 50%;
+}
+
+#left #leftPupil {
+    position: relative;
+    left: 0.35vw;
+}
+
+#left #rightPupil {
+    position: relative;
+    left: 0.35vw;
+}
+
+#left #tail {
+    position: relative;
+    left: 6.5vw;
+    bottom: 3.3vw;
+}
+
+#left .tp {
+    width: 1.5vw;
+    height: 1.5vw;
+    background: black;
+    border-radius: 50%;
+}
+
+/*left #tp_1 {
+}*/
+#left #tp_2 {
+    position: relative;
+    bottom: 1.3vw;
+}
+#left #tp_3 {
+    position: relative;
+    bottom: 2.5vw;
+}
+#left #tp_4 {
+    position: relative;
+    bottom: 3.7vw;
+}
+#left #tp_5 {
+    position: relative;
+    bottom: 4.9vw;
+}
+#left #tp_6 {
+    position: relative;
+    bottom: 6.1vw;
+}
+#left #tp_7 {
+    position: relative;
+    bottom: 7.3vw;
+}
+#left #tp_8 {
+    position: relative;
+    bottom: 8.5vw;
+}
+#left #tp_9 {
+    position: relative;
+    bottom: 9.7vw;
+}
+#left #tp_10 {
+    position: relative;
+    bottom: 10.9vw;
+}
+#left #tp_11 {
+    position: relative;
+    bottom: 12.1vw;
+}
+#left #tp_12 {
+    position: relative;
+    bottom: 13.3vw;
+}
+
+
+#about #catt {
+    margin-top: 15vw;
+}
+
+#about div {
+    height: 0;
+}
+
+#about #b1 {
+    width: 6vw;
+    height: 6vw;
+    background: black;
+    border-radius: 50%;
+    position: relative;
+    bottom: 0.5vw;
+    right: 1.5vw;
+    left: -0.7vw;
+}
+
+#about #b2 {
+    rotate: 20deg;
+    width: 5vw;
+    height: 3vw;
+    background: black;
+    border-radius: 35%;
+    position: relative;
+    bottom: 6vw;
+    right: 0vw;
+    left: 1.8vw;
+}
+
+
+#about #body {
+    rotate: 40deg;
+    width: 11vw;
+    height: 6vw;
+    background: black;
+    border-radius: 50% 40% 200% 100%;
+}
+
+#about #head {
+    width: 6vw;
+    height: 5vw;
+    background: black;
+    border-radius:40% 45% 55% 50%;
+    position: relative;
+    bottom: 4.5vw;
+    left: 7.5vw;
+    z-index: 1;
+}
+
+#about #flpaw {
+    rotate: 25deg;
+    width: 7vw;
+    height: 2vw;
+    background: black;
+    border-radius:0 30% 200% 60%;
+    position: relative;
+    bottom: 5.5vw;
+    left: 5vw;
+}
+
+#about #frpaw {
+    rotate: 25deg;
+    width: 7vw;
+    height: 2vw;
+    background: black;
+    border-radius:0 30% 200% 60%;
+    position: relative;
+    bottom: 9vw;
+    left: 7.5vw;
+}
+
+#about #blpaw {
+    rotate: 85deg;
+    width: 7vw;
+    height: 2vw;
+    background: black;
+    border-radius:0 30% 200% 60%;
+    position: relative;
+    bottom: 13vw;
+    left: -1.9vw;
+}
+
+#about #bl2 {
+    width: 5vw;
+    height: 2.5vw;
+    background: black;
+    border-radius:0 300% 100% 60%;
+    position: relative;
+    border-top: solid;
+    bottom: 1.3vw;
+    left: 0vw;
+}
+
+#about #lear {
+    width: 0;
+	height: 0;
+	border-left: 0.4vw solid transparent;
+	border-right: 2vw solid transparent;
+	border-bottom: 1.8vw solid black;
+    position: relative;
+    bottom: 1.5vw;
+    left: 0.5vw;
+}
+
+#about #rear {
+    width: 0;
+	height: 0;
+	border-left: 2.1vw solid transparent;
+	border-right: 0.3vw solid transparent;
+	border-bottom: 1.9vw solid black;
+    position: relative;
+    bottom: 3vw;
+    left: 3vw;
+}
+
+#about #nose {
+    height: 0;
+}
+
+#about #eyes {
+    height: auto;
+    position: relative;
+    display: block;
+    bottom: 0.8vw;
+    left: 1.9vw;
+    z-index: 1;
+}
+
+#about .eye {
+    width: 1vw;
+    height: 0.5vw;
+    border-radius: 0 0 1vw 1vw;
+    background: white;
+    scale: 1.5;
+}
+
+#about #rightEye {
+    float: right;
+    position: relative;
+    left: -2.4vw;
+    bottom: 0.5vw;
+}
+
+#about .pupil {
+    width: 0.25vw;
+    height: 0.45vw;
+    background: #e4c305;
+    border-radius: 50%;
+}
+
+#about #leftPupil {
+    position: relative;
+    left: 0.55vw;
+}
+
+#about #rightPupil {
+    position: relative;
+    left: 0.55vw;
+}
+
+#about #t {
+    position: relative;
+    bottom: 26vw;
+    right: 1vw;
+}
+
+#about #t1 {
+    margin: 0;
+    height: 2vw;
+    width: 2vw;
+    background: black;
+    border-radius: 50%;
+}
+#about #t2 {
+    margin: 0;
+    height: 2vw;
+    width: 2vw;
+    background: black;
+    border-radius: 50%;
+    position: relative;
+    bottom: 2.2vw;
+    left: 0.2vw;
+}
+#about #t3 {
+    margin: 0;
+    height: 2vw;
+    width: 2vw;
+    background: black;
+    border-radius: 50%;
+    position: relative;
+    bottom: 4.2vw;
+    left: 0.5vw;
+}
+#about #t4 {
+    margin: 0;
+    height: 2vw;
+    width: 2vw;
+    background: black;
+    border-radius: 50%;
+    position: relative;
+    bottom: 6vw;
+    left: 0.7vw;
+}
+#about #t5 {
+    margin: 0;
+    height: 2vw;
+    width: 2vw;
+    background: black;
+    border-radius: 50%;
+    position: relative;
+    bottom: 7.8vw;
+    left: 0.9vw;
+}
+#about #t6 {
+    margin: 0;
+    height: 2vw;
+    width: 2vw;
+    background: black;
+    border-radius: 50%;
+    position: relative;
+    bottom: 9.4vw;
+    left: 1.1vw;
+}
+#about #t7 {
+    margin: 0;
+    height: 2vw;
+    width: 2vw;
+    background: black;
+    border-radius: 50%;
+    position: relative;
+    bottom: 11vw;
+    left: 1.1vw;
+}
+#about #t8 {
+    margin: 0;
+    height: 2vw;
+    width: 2vw;
+    background: black;
+    border-radius: 50%;
+    position: relative;
+    bottom: 12.5vw;
+    left: 1.1vw;
+}
+#about #t9 {
+    margin: 0;
+    height: 4vw;
+    width: 2vw;
+    background: black;
+    position: relative;
+    bottom: 14vw;
+    left: 1.1vw;
+}
+#about #t10 {
+    margin: 0;
+    height: 2vw;
+    width: 2vw;
+    background: black;
+    border-radius: 50%;
+    position: relative;
+    bottom: 15vw;
+    left: 1.1vw;
+}
+#about #t11 {
+    margin: 0;
+    height: 2vw;
+    width: 2vw;
+    background: black;
+    border-radius: 50%;
+    position: relative;
+    bottom: 16.7vw;
+    left: 1.2vw;
+}
+#about #t12 {
+    rotate: 45deg;
+    margin: 0;
+    height: 2vw;
+    width: 2vw;
+    background: black;
+    position: relative;
+    bottom: 18vw;
+    left: 1.8vw;
+}
+
+#about #circle {
+    height: 3vw;
+    width: 10vw;
+    background: black;
+    position: relative;
+    opacity: 0.5;
+    border-radius: 50%;
+    bottom: 12.5vw;
+}
